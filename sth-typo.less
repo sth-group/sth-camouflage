@@ -1,0 +1,53 @@
+@font-base: 'YourFontName';
+@font-path: ~"../../assets/fonts/@{font-base}/@{font-base}";
+@font-face {
+    font-family: @font-base;
+    src: ~"url(@{font-path}.eot)";
+    src: ~"url(@{font-path}.eot?#iefix) format('embedded-opentype'), url('@{font-path}.woff') format('woff'), url('@{font-path}.ttf') format('truetype')";
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font {
+	font-family: @font-base;
+}
+
+body,
+html {
+    font-size: ~"@{base-font-size}px";
+    .font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+b {
+    .font;
+}
+
+h1 {
+    @calc: @base-font-size*3;
+    .font-size(@calc, 1.25);
+}
+
+h2 {
+    @calc: @base-font-size*2;
+    .font-size(@calc, 1.25);
+}
+
+h3 {
+    @calc: @base-font-size*1.5;
+    .font-size(@calc, 1.25);
+}
+
+h4 {
+    @calc: @base-font-size*1.333;
+    .font-size(@calc, 1.25);
+}
+
+p {
+    .padd(0, 0, 12, 0);
+}
+
