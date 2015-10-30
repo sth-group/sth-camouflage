@@ -14,5 +14,11 @@
 
 body,
 html {
-  font-size: ~"@{base-font-size}px";
+  font-size: ~"@{font-size-base}px";
+  @media screen and (max-width: @screen-medium) {
+    font-size: ~"@{font-size-medium}px";
+  }
+  @media screen and (max-width: @screen-small) {
+    font-size: ~"@{font-size-small}px";
+  }
 }

@@ -48,13 +48,13 @@
 // 	.rem(38);
 //	.padding: @rem;
 .rem(@px) {
-  @calc: (@px / @base-font-size);
+  @calc: (@px / @font-size-base);
   @rem: ~"@{calc}rem";
 }
 
 // ex. font-size(38);
 .font-size(@px, @lh: 1.4) {
-  @font-size: (@px / @base-font-size);
+  @font-size: (@px / @font-size-base);
   font-size: ~"@{font-size}rem";
   line-height: @lh;
 }
@@ -67,32 +67,32 @@
 
 //ex. rem-dims(120, 40);
 .dims-rem(@wh, @hh) {
-  @width: (@wh / @base-font-size);
-  @height: (@hh / @base-font-size);
+  @width: (@wh / @font-size-base);
+  @height: (@hh / @font-size-base);
   width: ~"@{width}rem";
   height: ~"@{height}rem";
 }
 
 //ex .marg(51, 20, 46, 20);
 .marg(@mt: 0; @mr: 0; @mb: 0; @ml: 0; @im: ''; ) {
-  @mtv: (@mt / @base-font-size);
-  @mrv: (@mr / @base-font-size);
-  @mbv: (@mb / @base-font-size);
-  @mlv: (@ml / @base-font-size);
+  @mtv: (@mt / @font-size-base);
+  @mrv: (@mr / @font-size-base);
+  @mbv: (@mb / @font-size-base);
+  @mlv: (@ml / @font-size-base);
   margin: 0;
 }
 .marg-auto(@mt: 0; @mb: 0; @im: ''; ) {
-  @mtv: (@mt / @base-font-size);
-  @mbv: (@mb / @base-font-size);
+  @mtv: (@mt / @font-size-base);
+  @mbv: (@mb / @font-size-base);
   margin: ~"@{mtv}rem" ~"auto" ~"@{mbv}rem";
 }
 
 //ex .padd(51, 20, 46, 20);
 .padd(@pt: 0; @pr: 0; @pb: 0; @pl: 0; ) {
-  @ptv: (@pt / @base-font-size);
-  @prv: (@pr / @base-font-size);
-  @pbv: (@pb / @base-font-size);
-  @plv: (@pl / @base-font-size);
+  @ptv: (@pt / @font-size-base);
+  @prv: (@pr / @font-size-base);
+  @pbv: (@pb / @font-size-base);
+  @plv: (@pl / @font-size-base);
   padding: ~"@{ptv}rem" ~"@{prv}rem" ~"@{pbv}rem" ~"@{plv}rem";
 }
 
