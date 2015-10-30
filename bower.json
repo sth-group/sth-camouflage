@@ -1,0 +1,23 @@
+{
+  "name": "Sth-Camouflage",
+  "homepage": "https://github.com/sth-group/sth-camouflage",
+  "authors": [
+    "Sth - Krzysztof Weglinski <krzysiek@csth.pl>"
+  ],
+  "description": "Less mixin package, for quick web development",
+  "main": "_sth_base.less",
+  "moduleType": [],
+  "keywords": [
+    "less",
+    "mixin",
+    "sth"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

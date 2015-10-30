@@ -2,6 +2,9 @@
 Less mixins boilerplate
 for quick building websites.
 
+# install
+    bower install Sth-Camouflage
+    
 #Usage
     @font-size-base: 14;
     // font-sizes for medium screen size
