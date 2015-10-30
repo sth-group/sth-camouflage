@@ -1,0 +1,18 @@
+// fonts should be contained in folder '/fontname/fontname.eot'
+// ex. for Helvetica-Light and Helvetica-Bold it goes like:
+// ~{fonts-folder}/Helvetica-Light/Helvetica-Light.eot
+// ~{fonts-folder}/Helvetica-Bold/Helvetica-Bold.eot
+// @fonts: 'Helvetica-Light', 'Helvetica-Bold';
+
+@fonts: 'Hel', 'HelB';
+@fPath: "../../assets/fonts";
+
+.for(@fonts);
+.-each(@name) {
+  .font-face(@name, @fPath);
+}
+
+body,
+html {
+  font-size: ~"@{base-font-size}px";
+}
